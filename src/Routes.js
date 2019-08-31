@@ -7,14 +7,13 @@ import Reg from '../src/pages/signup';
 
 export default class Routes extends Component {
     render(){
-        return(
-            <Text> hello </Text>
+        return (
             <Router>
                 <Stack key="root">
                     <Scene key="login" component={Log} title="Login" initial={true}/>
                     <Scene key="register" component={Reg} title="Register"/>
                 </Stack>
           </Router>
-        )
+        );
     }
 }

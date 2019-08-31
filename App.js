@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/pages/login';
+import { StyleSheet, View } from 'react-native';
+
+import Routes from './src/Routes';
 
 export default class App extends Component {
   render(){
     return (
       <View style={styles.container}>
         {/* <Text>Hello World</Text> */}
-        <Login/>
+        <Routes/>
       </View>
 
     );
@@ -17,7 +18,6 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },

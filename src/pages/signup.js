@@ -5,15 +5,15 @@ import Logo from '../components/logo';
 import Form from '../components/Form';
 
 
-export default class login extends Component {
+export default class signup extends Component {
     render(){
         return (
             <View style={styles.container}>
                 <Logo/>
-                <Form type="Login"/>
+                <Form type="Register"/>
                 <View style={styles.signUpTextContent}>
-                    <Text style={styles.SignUpText}>Don't have an account yet?</Text>
-                    <Text style={styles.sig}> Register</Text>
+                    <Text style={styles.SignUpText}>Already Have an Account?</Text>
+                    <Text style={styles.sig}> Sign In</Text>
                 </View>
             </View>
         )

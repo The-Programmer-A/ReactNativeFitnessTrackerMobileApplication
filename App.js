@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import Routes from './src/Routes';
+import Login from './src/pages/login';
 
 export default class App extends Component {
   render(){
     return (
       <View style={styles.container}>
-        {/* <Text>Hello World</Text> */}
-        <Routes/>
+        <Login/>
       </View>
-
     );
   }
 }
@@ -20,5 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });

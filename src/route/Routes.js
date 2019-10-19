@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { Text } from 'react-native';
 import {Router, Stack, Scene} from 'react-native-router-flux';
 
-import Log from '../src/pages/login';
-import Reg from '../src/pages/signup';
+import Log from '../pages/login';
+import Reg from '../pages/signup';
 
 export default class Routes extends Component {
     render(){
-        return (
+        return(
             <Router>
                 <Stack key="root">
                     <Scene key="login" component={Log} title="Login" initial={true}/>
